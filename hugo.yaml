@@ -1,0 +1,73 @@
+# Hugo site configuration for the PaperMod theme.
+# Replace every <PLACEHOLDER> before your first push.
+
+baseURL: "https://cheptoo-tk.github.io/"   # e.g. https://tonycheptoo.dev/ (or https://<username>.github.io/ until the domain is live)
+languageCode: "en-gb"
+title: "Tony Cheptoo"   # short, so the header fits on phones
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+pagination:
+  pagerSize: 10
+
+minify:
+  minifyOutput: true
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]   # JSON powers the search page
+
+params:
+  env: production
+  title: "Tony Cheptoo — Detection Engineering"
+  description: "Detection engineering for identity and cloud data platforms: tested detections, lab write-ups and lessons learned."
+  author: "Tony Cheptoo"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  ShowShareButtons: false
+
+  homeInfoParams:
+    Title: "Detection engineering for identity and cloud data platforms"
+    Content: >
+      I'm Tony, a detection and response analyst. I write about detecting attacks on
+      Entra ID, OAuth, cloud secrets and data platforms like Snowflake — with lab
+      data, tested queries and honest limits.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/<YOUR-GITHUB-USERNAME>"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/tonykiplagatcheptoo/"
+    - name: rss
+      url: "/index.xml"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: false

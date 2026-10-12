@@ -42,7 +42,7 @@ params:
 
   socialIcons:
     - name: github
-      url: "https://github.com/<YOUR-GITHUB-USERNAME>"
+      url: "https://github.com/cheptoo-tk"
     - name: linkedin
       url: "https://www.linkedin.com/in/tonykiplagatcheptoo/"
     - name: rss
